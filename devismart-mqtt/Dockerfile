@@ -1,6 +1,6 @@
 ARG BUILD_FROM
 FROM $BUILD_FROM AS build
-ARG JAVA_VERSION=17
+ARG JAVA_VERSION=21
 
 LABEL org.opencontainers.image.description="$(cat README.md)"
 
@@ -38,7 +38,7 @@ RUN mvn clean package -DskipTests
 
 # Stage 2: Create the final image to run the application
 FROM $BUILD_FROM
-ARG JAVA_VERSION=17
+ARG JAVA_VERSION=21
 
 RUN apt-get update && \
     DEBIAN_FRONTEND=noninteractive apt-get install --no-install-recommends -y \
