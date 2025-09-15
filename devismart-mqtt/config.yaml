@@ -1,9 +1,9 @@
 # https://developers.home-assistant.io/docs/add-ons/configuration#add-on-config
-name: Devismart MQTT
-version: "0.3.beta2"
+name: Devismart MQTT Java21
+version: "0.3.beta3"
 slug: devismart-mqtt
-description: Devismart MQTT Addon
-url: "https://github.com/bob-tm/ha-devireg-mqtt-addon/"
+description: Devismart MQTT Addon fusing Java 21
+url: "https://github.com/barkonar/ha-devireg-mqtt-addon-j21/"
 arch:
   - armhf
   - armv7
